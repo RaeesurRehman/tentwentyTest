@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="118" id="KGk-i7-Jjw" customClass="MovieTableViewCell" customModule="tentwentyTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Movie" translatesAutoresizingMaskIntoConstraints="NO" id="SUM-cI-af9">
+                        <rect key="frame" x="2" y="10" width="130" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="Sfq-U8-bit"/>
+                            <constraint firstAttribute="width" constant="130" id="pTF-3Y-lgy"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timeless" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Gv-hs-o2C">
+                        <rect key="frame" x="152" y="40" width="71" height="23"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                        <color key="textColor" red="0.12549019607843137" green="0.17254901960784313" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fantasy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuH-Cl-nJu">
+                        <rect key="frame" x="152" y="68" width="49" height="17"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                        <color key="textColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpt-9e-SS4">
+                        <rect key="frame" x="275" y="52.5" width="30" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="AZ4-4b-zw7"/>
+                            <constraint firstAttribute="height" constant="15" id="UkS-NM-iNz"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="More dots"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="vpt-9e-SS4" firstAttribute="centerY" secondItem="SUM-cI-af9" secondAttribute="centerY" id="0Vz-86-nT6"/>
+                    <constraint firstItem="5Gv-hs-o2C" firstAttribute="top" secondItem="SUM-cI-af9" secondAttribute="top" constant="30" id="3aE-YK-aju"/>
+                    <constraint firstItem="SUM-cI-af9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="H1F-l9-g3y"/>
+                    <constraint firstItem="5Gv-hs-o2C" firstAttribute="leading" secondItem="SUM-cI-af9" secondAttribute="trailing" constant="20" id="XlG-K3-UQW"/>
+                    <constraint firstItem="SUM-cI-af9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="dee-4T-jwt"/>
+                    <constraint firstItem="uuH-Cl-nJu" firstAttribute="top" secondItem="5Gv-hs-o2C" secondAttribute="bottom" constant="5" id="duy-m8-sBq"/>
+                    <constraint firstItem="uuH-Cl-nJu" firstAttribute="leading" secondItem="5Gv-hs-o2C" secondAttribute="leading" id="eZw-pl-QRV"/>
+                    <constraint firstAttribute="trailing" secondItem="vpt-9e-SS4" secondAttribute="trailing" constant="15" id="j7O-gH-UqZ"/>
+                    <constraint firstAttribute="bottom" secondItem="SUM-cI-af9" secondAttribute="bottom" constant="10" id="ow6-uh-jx0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="137.68115942028987" y="98.4375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="More dots" width="20" height="4"/>
+        <image name="Movie" width="163" height="100"/>
+    </resources>
+</document>

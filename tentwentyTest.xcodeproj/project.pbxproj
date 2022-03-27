@@ -7,15 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		843B309027EF352700A89102 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B308F27EF352700A89102 /* SearchResultViewController.swift */; };
+		843B309227EF50DE00A89102 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B309127EF50DE00A89102 /* MovieDetailViewController.swift */; };
+		843B309527EF550400A89102 /* GenreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B309327EF550400A89102 /* GenreCollectionViewCell.swift */; };
+		843B309627EF550400A89102 /* GenreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843B309427EF550400A89102 /* GenreCollectionViewCell.xib */; };
+		843B309B27EF5BA000A89102 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B309A27EF5BA000A89102 /* CustomLabel.swift */; };
+		843B309D27EF96F000A89102 /* SelectSeatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B309C27EF96F000A89102 /* SelectSeatsViewController.swift */; };
+		843B30A027EF977700A89102 /* DatesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B309E27EF977700A89102 /* DatesCollectionViewCell.swift */; };
+		843B30A127EF977700A89102 /* DatesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843B309F27EF977700A89102 /* DatesCollectionViewCell.xib */; };
+		843B30A427EF98A800A89102 /* SeatLayoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B30A227EF98A800A89102 /* SeatLayoutCollectionViewCell.swift */; };
+		843B30A527EF98A800A89102 /* SeatLayoutCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843B30A327EF98A800A89102 /* SeatLayoutCollectionViewCell.xib */; };
 		8482456D27EEDFAE00F671F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482456C27EEDFAE00F671F9 /* AppDelegate.swift */; };
 		8482456F27EEDFAE00F671F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482456E27EEDFAE00F671F9 /* SceneDelegate.swift */; };
 		8482457127EEDFAE00F671F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482457027EEDFAE00F671F9 /* ViewController.swift */; };
 		8482457427EEDFAE00F671F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8482457227EEDFAE00F671F9 /* Main.storyboard */; };
 		8482457627EEDFB000F671F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8482457527EEDFB000F671F9 /* Assets.xcassets */; };
 		8482457927EEDFB000F671F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8482457727EEDFB000F671F9 /* LaunchScreen.storyboard */; };
+		8482459427EEE7F000F671F9 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482458227EEE7EF00F671F9 /* Poppins-Italic.ttf */; };
+		8482459527EEE7F000F671F9 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482458327EEE7EF00F671F9 /* Poppins-BoldItalic.ttf */; };
+		8482459627EEE7F000F671F9 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482458427EEE7EF00F671F9 /* Poppins-Light.ttf */; };
+		8482459727EEE7F000F671F9 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482458527EEE7F000F671F9 /* Poppins-ExtraBoldItalic.ttf */; };
+		8482459827EEE7F000F671F9 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482458627EEE7F000F671F9 /* Poppins-SemiBold.ttf */; };
+		8482459927EEE7F000F671F9 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482458727EEE7F000F671F9 /* Poppins-ExtraLight.ttf */; };
+		8482459A27EEE7F000F671F9 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482458827EEE7F000F671F9 /* Poppins-ExtraLightItalic.ttf */; };
+		8482459B27EEE7F000F671F9 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482458927EEE7F000F671F9 /* Poppins-Medium.ttf */; };
+		8482459C27EEE7F000F671F9 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482458A27EEE7F000F671F9 /* Poppins-Regular.ttf */; };
+		8482459D27EEE7F000F671F9 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482458B27EEE7F000F671F9 /* Poppins-BlackItalic.ttf */; };
+		8482459E27EEE7F000F671F9 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482458C27EEE7F000F671F9 /* Poppins-SemiBoldItalic.ttf */; };
+		8482459F27EEE7F000F671F9 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482458D27EEE7F000F671F9 /* Poppins-ThinItalic.ttf */; };
+		848245A027EEE7F000F671F9 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482458E27EEE7F000F671F9 /* Poppins-ExtraBold.ttf */; };
+		848245A127EEE7F000F671F9 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482458F27EEE7F000F671F9 /* Poppins-Black.ttf */; };
+		848245A227EEE7F000F671F9 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482459027EEE7F000F671F9 /* Poppins-Bold.ttf */; };
+		848245A327EEE7F000F671F9 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482459127EEE7F000F671F9 /* Poppins-MediumItalic.ttf */; };
+		848245A427EEE7F000F671F9 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482459227EEE7F000F671F9 /* Poppins-LightItalic.ttf */; };
+		848245A527EEE7F000F671F9 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482459327EEE7F000F671F9 /* Poppins-Thin.ttf */; };
+		848245AA27EEF0EE00F671F9 /* MoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848245A827EEF0EE00F671F9 /* MoviesTableViewCell.swift */; };
+		848245AB27EEF0EE00F671F9 /* MoviesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848245A927EEF0EE00F671F9 /* MoviesTableViewCell.xib */; };
+		848245B127EEF61200F671F9 /* MovieGenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848245B027EEF61200F671F9 /* MovieGenreViewController.swift */; };
+		848245B627EF246100F671F9 /* MovieGenreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848245B427EF246100F671F9 /* MovieGenreCollectionViewCell.swift */; };
+		848245B727EF246100F671F9 /* MovieGenreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848245B527EF246100F671F9 /* MovieGenreCollectionViewCell.xib */; };
+		848245BA27EF285A00F671F9 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848245B827EF285A00F671F9 /* MovieTableViewCell.swift */; };
+		848245BB27EF285A00F671F9 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848245B927EF285A00F671F9 /* MovieTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		843B308F27EF352700A89102 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		843B309127EF50DE00A89102 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		843B309327EF550400A89102 /* GenreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCollectionViewCell.swift; sourceTree = "<group>"; };
+		843B309427EF550400A89102 /* GenreCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenreCollectionViewCell.xib; sourceTree = "<group>"; };
+		843B309A27EF5BA000A89102 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		843B309C27EF96F000A89102 /* SelectSeatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSeatsViewController.swift; sourceTree = "<group>"; };
+		843B309E27EF977700A89102 /* DatesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesCollectionViewCell.swift; sourceTree = "<group>"; };
+		843B309F27EF977700A89102 /* DatesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatesCollectionViewCell.xib; sourceTree = "<group>"; };
+		843B30A227EF98A800A89102 /* SeatLayoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatLayoutCollectionViewCell.swift; sourceTree = "<group>"; };
+		843B30A327EF98A800A89102 /* SeatLayoutCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeatLayoutCollectionViewCell.xib; sourceTree = "<group>"; };
 		8482456927EEDFAE00F671F9 /* tentwentyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tentwentyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8482456C27EEDFAE00F671F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8482456E27EEDFAE00F671F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +69,31 @@
 		8482457527EEDFB000F671F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8482457827EEDFB000F671F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8482457A27EEDFB000F671F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8482458227EEE7EF00F671F9 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		8482458327EEE7EF00F671F9 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		8482458427EEE7EF00F671F9 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		8482458527EEE7F000F671F9 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		8482458627EEE7F000F671F9 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		8482458727EEE7F000F671F9 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		8482458827EEE7F000F671F9 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		8482458927EEE7F000F671F9 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		8482458A27EEE7F000F671F9 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		8482458B27EEE7F000F671F9 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		8482458C27EEE7F000F671F9 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		8482458D27EEE7F000F671F9 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		8482458E27EEE7F000F671F9 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		8482458F27EEE7F000F671F9 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		8482459027EEE7F000F671F9 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		8482459127EEE7F000F671F9 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		8482459227EEE7F000F671F9 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		8482459327EEE7F000F671F9 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		848245A827EEF0EE00F671F9 /* MoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewCell.swift; sourceTree = "<group>"; };
+		848245A927EEF0EE00F671F9 /* MoviesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesTableViewCell.xib; sourceTree = "<group>"; };
+		848245B027EEF61200F671F9 /* MovieGenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGenreViewController.swift; sourceTree = "<group>"; };
+		848245B427EF246100F671F9 /* MovieGenreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGenreCollectionViewCell.swift; sourceTree = "<group>"; };
+		848245B527EF246100F671F9 /* MovieGenreCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieGenreCollectionViewCell.xib; sourceTree = "<group>"; };
+		848245B827EF285A00F671F9 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		848245B927EF285A00F671F9 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +107,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		843B309727EF562B00A89102 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				843B309A27EF5BA000A89102 /* CustomLabel.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		8482456027EEDFAE00F671F9 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +134,9 @@
 		8482456B27EEDFAE00F671F9 /* tentwentyTest */ = {
 			isa = PBXGroup;
 			children = (
+				843B309727EF562B00A89102 /* Common */,
+				848245A627EEF0B900F671F9 /* Watch */,
+				8482458027EEE7D300F671F9 /* Resources */,
 				8482456C27EEDFAE00F671F9 /* AppDelegate.swift */,
 				8482456E27EEDFAE00F671F9 /* SceneDelegate.swift */,
 				8482457027EEDFAE00F671F9 /* ViewController.swift */,
@@ -65,6 +146,86 @@
 				8482457A27EEDFB000F671F9 /* Info.plist */,
 			);
 			path = tentwentyTest;
+			sourceTree = "<group>";
+		};
+		8482458027EEE7D300F671F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8482458127EEE7DB00F671F9 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8482458127EEE7DB00F671F9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8482458F27EEE7F000F671F9 /* Poppins-Black.ttf */,
+				8482458B27EEE7F000F671F9 /* Poppins-BlackItalic.ttf */,
+				8482459027EEE7F000F671F9 /* Poppins-Bold.ttf */,
+				8482458327EEE7EF00F671F9 /* Poppins-BoldItalic.ttf */,
+				8482458E27EEE7F000F671F9 /* Poppins-ExtraBold.ttf */,
+				8482458527EEE7F000F671F9 /* Poppins-ExtraBoldItalic.ttf */,
+				8482458727EEE7F000F671F9 /* Poppins-ExtraLight.ttf */,
+				8482458827EEE7F000F671F9 /* Poppins-ExtraLightItalic.ttf */,
+				8482458227EEE7EF00F671F9 /* Poppins-Italic.ttf */,
+				8482458427EEE7EF00F671F9 /* Poppins-Light.ttf */,
+				8482459227EEE7F000F671F9 /* Poppins-LightItalic.ttf */,
+				8482458927EEE7F000F671F9 /* Poppins-Medium.ttf */,
+				8482459127EEE7F000F671F9 /* Poppins-MediumItalic.ttf */,
+				8482458A27EEE7F000F671F9 /* Poppins-Regular.ttf */,
+				8482458627EEE7F000F671F9 /* Poppins-SemiBold.ttf */,
+				8482458C27EEE7F000F671F9 /* Poppins-SemiBoldItalic.ttf */,
+				8482459327EEE7F000F671F9 /* Poppins-Thin.ttf */,
+				8482458D27EEE7F000F671F9 /* Poppins-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		848245A627EEF0B900F671F9 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				848245AF27EEF5ED00F671F9 /* Views */,
+				848245AC27EEF5C800F671F9 /* Controllers */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		848245A727EEF0C300F671F9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				848245A827EEF0EE00F671F9 /* MoviesTableViewCell.swift */,
+				848245A927EEF0EE00F671F9 /* MoviesTableViewCell.xib */,
+				848245B427EF246100F671F9 /* MovieGenreCollectionViewCell.swift */,
+				848245B527EF246100F671F9 /* MovieGenreCollectionViewCell.xib */,
+				848245B827EF285A00F671F9 /* MovieTableViewCell.swift */,
+				848245B927EF285A00F671F9 /* MovieTableViewCell.xib */,
+				843B309327EF550400A89102 /* GenreCollectionViewCell.swift */,
+				843B309427EF550400A89102 /* GenreCollectionViewCell.xib */,
+				843B309E27EF977700A89102 /* DatesCollectionViewCell.swift */,
+				843B309F27EF977700A89102 /* DatesCollectionViewCell.xib */,
+				843B30A227EF98A800A89102 /* SeatLayoutCollectionViewCell.swift */,
+				843B30A327EF98A800A89102 /* SeatLayoutCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		848245AC27EEF5C800F671F9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				848245B027EEF61200F671F9 /* MovieGenreViewController.swift */,
+				843B308F27EF352700A89102 /* SearchResultViewController.swift */,
+				843B309127EF50DE00A89102 /* MovieDetailViewController.swift */,
+				843B309C27EF96F000A89102 /* SelectSeatsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		848245AF27EEF5ED00F671F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				848245A727EEF0C300F671F9 /* Cells */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +287,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				8482457927EEDFB000F671F9 /* LaunchScreen.storyboard in Resources */,
+				848245A227EEE7F000F671F9 /* Poppins-Bold.ttf in Resources */,
+				848245BB27EF285A00F671F9 /* MovieTableViewCell.xib in Resources */,
+				848245A127EEE7F000F671F9 /* Poppins-Black.ttf in Resources */,
+				8482459D27EEE7F000F671F9 /* Poppins-BlackItalic.ttf in Resources */,
+				848245A327EEE7F000F671F9 /* Poppins-MediumItalic.ttf in Resources */,
+				8482459627EEE7F000F671F9 /* Poppins-Light.ttf in Resources */,
+				843B309627EF550400A89102 /* GenreCollectionViewCell.xib in Resources */,
+				848245B727EF246100F671F9 /* MovieGenreCollectionViewCell.xib in Resources */,
+				8482459E27EEE7F000F671F9 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				8482459B27EEE7F000F671F9 /* Poppins-Medium.ttf in Resources */,
+				8482459C27EEE7F000F671F9 /* Poppins-Regular.ttf in Resources */,
+				843B30A127EF977700A89102 /* DatesCollectionViewCell.xib in Resources */,
+				8482459A27EEE7F000F671F9 /* Poppins-ExtraLightItalic.ttf in Resources */,
 				8482457627EEDFB000F671F9 /* Assets.xcassets in Resources */,
+				848245A427EEE7F000F671F9 /* Poppins-LightItalic.ttf in Resources */,
+				8482459927EEE7F000F671F9 /* Poppins-ExtraLight.ttf in Resources */,
+				8482459727EEE7F000F671F9 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				8482459427EEE7F000F671F9 /* Poppins-Italic.ttf in Resources */,
+				848245A527EEE7F000F671F9 /* Poppins-Thin.ttf in Resources */,
+				8482459827EEE7F000F671F9 /* Poppins-SemiBold.ttf in Resources */,
+				843B30A527EF98A800A89102 /* SeatLayoutCollectionViewCell.xib in Resources */,
+				848245A027EEE7F000F671F9 /* Poppins-ExtraBold.ttf in Resources */,
+				848245AB27EEF0EE00F671F9 /* MoviesTableViewCell.xib in Resources */,
+				8482459F27EEE7F000F671F9 /* Poppins-ThinItalic.ttf in Resources */,
 				8482457427EEDFAE00F671F9 /* Main.storyboard in Resources */,
+				8482459527EEE7F000F671F9 /* Poppins-BoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +325,17 @@
 			files = (
 				8482457127EEDFAE00F671F9 /* ViewController.swift in Sources */,
 				8482456D27EEDFAE00F671F9 /* AppDelegate.swift in Sources */,
+				843B309B27EF5BA000A89102 /* CustomLabel.swift in Sources */,
+				843B30A027EF977700A89102 /* DatesCollectionViewCell.swift in Sources */,
+				843B309527EF550400A89102 /* GenreCollectionViewCell.swift in Sources */,
+				848245BA27EF285A00F671F9 /* MovieTableViewCell.swift in Sources */,
+				843B309D27EF96F000A89102 /* SelectSeatsViewController.swift in Sources */,
+				848245B127EEF61200F671F9 /* MovieGenreViewController.swift in Sources */,
+				848245B627EF246100F671F9 /* MovieGenreCollectionViewCell.swift in Sources */,
+				848245AA27EEF0EE00F671F9 /* MoviesTableViewCell.swift in Sources */,
+				843B309027EF352700A89102 /* SearchResultViewController.swift in Sources */,
+				843B30A427EF98A800A89102 /* SeatLayoutCollectionViewCell.swift in Sources */,
+				843B309227EF50DE00A89102 /* MovieDetailViewController.swift in Sources */,
 				8482456F27EEDFAE00F671F9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
