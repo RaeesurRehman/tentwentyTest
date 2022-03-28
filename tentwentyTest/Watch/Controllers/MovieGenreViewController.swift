@@ -15,6 +15,8 @@ class MovieGenreViewController: UIViewController {
     @IBOutlet weak var searchTF: UITextField!
     @IBOutlet weak var moviesTableView: UITableView!
     @IBOutlet var contentView: UIView!
+    var upcomingMovies = [Movie]()
+    var sortedMovies = [Movie]()
     override func viewDidLoad() {
         super.viewDidLoad()
         let nibcell = UINib(nibName: "MovieGenreCollectionViewCell", bundle: nil)
@@ -22,6 +24,8 @@ class MovieGenreViewController: UIViewController {
         genreCollectionView.reloadData()
         searchView.layer.cornerRadius = searchView.frame.height / 2
         self.searchTF.returnKeyType = .go
+        self.searchTF?.addTarget(self, action: #selector(textFieldDidEditingChanged(_:)), for: .editingChanged)
+        sortedMovies = upcomingMovies
         // Do any additional setup after loading the view.
     }
     func activeMoviesView(_ active:Bool) {
@@ -63,12 +67,20 @@ extension MovieGenreViewController : UICollectionViewDelegate,UICollectionViewDa
 }
 extension MovieGenreViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return sortedMovies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell =  Bundle.main.loadNibNamed("MovieTableViewCell", owner: self, options: nil)?.first as! MovieTableViewCell
+        cell.configure(movie: sortedMovies[indexPath.row])
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedMovie = sortedMovies[indexPath.row]
+        let movieDetail = self.storyboard?.instantiateViewController(withIdentifier: "MovieDetailViewController") as! MovieDetailViewController
+        movieDetail.modalPresentationStyle = .fullScreen
+        movieDetail.selectedMovie = selectedMovie
+        self.present(movieDetail, animated: true, completion: nil)
     }
     
     
@@ -76,6 +88,18 @@ extension MovieGenreViewController: UITableViewDelegate,UITableViewDataSource {
 extension MovieGenreViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         return true
+    }
+    @objc func textFieldDidEditingChanged(_ textField: UITextField) {
+        if textField.text != nil {
+            if textField.text == "" {
+                self.sortedMovies = self.upcomingMovies
+            }
+            else {
+        let text = textField.text!
+            self.sortedMovies = self.upcomingMovies.filter{ $0.title!.contains(text) }
+            }
+            self.moviesTableView.reloadData()
+        }
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         print("text field on")

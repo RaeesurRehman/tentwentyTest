@@ -28,14 +28,14 @@
                             <constraint firstAttribute="width" constant="130" id="pTF-3Y-lgy"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timeless" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Gv-hs-o2C">
-                        <rect key="frame" x="152" y="40" width="71" height="23"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timeless" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Gv-hs-o2C">
+                        <rect key="frame" x="152" y="40" width="113" height="22.5"/>
                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
                         <color key="textColor" red="0.12549019607843137" green="0.17254901960784313" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fantasy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuH-Cl-nJu">
-                        <rect key="frame" x="152" y="68" width="49" height="17"/>
+                        <rect key="frame" x="152" y="67.5" width="49" height="17"/>
                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
                         <color key="textColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -55,6 +55,7 @@
                     <constraint firstItem="vpt-9e-SS4" firstAttribute="centerY" secondItem="SUM-cI-af9" secondAttribute="centerY" id="0Vz-86-nT6"/>
                     <constraint firstItem="5Gv-hs-o2C" firstAttribute="top" secondItem="SUM-cI-af9" secondAttribute="top" constant="30" id="3aE-YK-aju"/>
                     <constraint firstItem="SUM-cI-af9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="H1F-l9-g3y"/>
+                    <constraint firstItem="vpt-9e-SS4" firstAttribute="leading" secondItem="5Gv-hs-o2C" secondAttribute="trailing" constant="10" id="I72-M1-1y2"/>
                     <constraint firstItem="5Gv-hs-o2C" firstAttribute="leading" secondItem="SUM-cI-af9" secondAttribute="trailing" constant="20" id="XlG-K3-UQW"/>
                     <constraint firstItem="SUM-cI-af9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="dee-4T-jwt"/>
                     <constraint firstItem="uuH-Cl-nJu" firstAttribute="top" secondItem="5Gv-hs-o2C" secondAttribute="bottom" constant="5" id="duy-m8-sBq"/>
@@ -65,6 +66,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="moviePoster" destination="SUM-cI-af9" id="E8G-eD-7d7"/>
+                <outlet property="movieTitle" destination="5Gv-hs-o2C" id="Thy-rv-Bdu"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="98.4375"/>
         </tableViewCell>
     </objects>

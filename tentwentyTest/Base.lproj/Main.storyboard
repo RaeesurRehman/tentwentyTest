@@ -215,6 +215,7 @@
                     </view>
                     <connections>
                         <outlet property="contentView" destination="Pgs-2n-RgD" id="hPu-9s-DhB"/>
+                        <outlet property="moviesTableView" destination="zDQ-xt-CHE" id="AG5-5A-3q6"/>
                         <outlet property="viewForTab" destination="6IC-cn-MUr" id="RZd-SB-b8Q"/>
                     </connections>
                 </viewController>
@@ -245,6 +246,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="back Arrow"/>
                                 <connections>
+                                    <action selector="backTapped:" destination="hDZ-Nh-ojq" eventType="touchUpInside" id="YbL-1m-tQw"/>
                                     <action selector="magnifierTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZDV-b0-sJR"/>
                                 </connections>
                             </button>
@@ -381,6 +383,9 @@
                     <connections>
                         <outlet property="genreCollectionView" destination="rPD-EJ-nXA" id="YZW-hK-cdh"/>
                         <outlet property="getTicketsBtn" destination="Dmh-gI-okk" id="MXh-FU-srt"/>
+                        <outlet property="inTheaterLabel" destination="Uzb-Rm-SW0" id="weR-IO-8uI"/>
+                        <outlet property="movieCoverPhoto" destination="fts-X0-dht" id="bHk-Xb-TUE"/>
+                        <outlet property="overViewText" destination="BSg-33-TbS" id="tX5-Gc-6S6"/>
                         <outlet property="watchTrailerBtn" destination="0ak-zl-F8d" id="HaK-oe-PHg"/>
                     </connections>
                 </viewController>
